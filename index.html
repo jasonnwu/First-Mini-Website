@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
       <nav>
-        <img src="./assets/FES.svg" alt="" />
+        <img src="./assets/FES.svg" class="logo" alt="" />
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="discord">Discord</a></li>
@@ -17,83 +18,96 @@
         </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best place to learn Frontend</h1>
-          <p>Go from absolute beginner to pro with a simplified process</p>
-          <button>Start now</button>
+        <div class="row">
+          <div>
+            <h1>Best place to learn Frontend</h1>
+            <p class="subheader">
+              Go from absolute beginner to pro with a simplified process
+            </p>
+            <button>Start now</button>
+          </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="Home page image" />
+          </figure>
         </div>
-        <figure>
-          <img src="./assets/laptop.png" alt="Home page image" />
-        </figure>
       </header>
     </section>
 
     <main>
       <section id="about">
         <h2>About</h2>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            repellat ex ab fuga, dicta dolorem facere illo nam quaerat minima,
-            nemo cupiditate explicabo quae vero veniam totam, quam quod cumque?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            repellat ex ab fuga, dicta dolorem facere illo nam quaerat minima,
-            nemo cupiditate explicabo quae vero veniam totam, quam quod cumque?
-          </p>
+        <div class="row">
+          <div class="section-description">
+            <div class="section-description--wrapper">
+              <p class="section-description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente repellat ex ab fuga, dicta dolorem facere illo nam
+                quaerat minima, nemo cupiditate explicabo quae vero veniam
+                totam, quam quod cumque?
+              </p>
+              <p class="section-description--para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente repellat ex ab fuga, dicta dolorem facere illo nam
+                quaerat minima, nemo cupiditate explicabo quae vero veniam
+                totam, quam quod cumque?
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img src="./assets/about.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="./assets/about.jpg" alt="" />
-        </figure>
       </section>
 
       <section id="discord">
         <h2>Discord</h2>
-        <figure>
-          <img src="./assets/discord.png" alt="" />
-        </figure>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eos
-            voluptatum repudiandae commodi impedit in necessitatibus, sit
-            tempora placeat explicabo assumenda tempore, atque veritatis ea nam
-            cupiditate architecto dolores vero!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint eos
-            voluptatum repudiandae commodi impedit in necessitatibus, sit
-            tempora placeat explicabo assumenda tempore, atque veritatis ea nam
-            cupiditate architecto dolores vero!
-          </p>
+        <div class="row">
+          <div class="section-description">
+            <figure class="about__img--wrapper">
+              <img src="./assets/discord.png" alt="" />
+            </figure>
+            <div>
+              <p class="section-description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                eos voluptatum repudiandae commodi impedit in necessitatibus,
+                sit tempora placeat explicabo assumenda tempore, atque veritatis
+                ea nam cupiditate architecto dolores vero!
+              </p>
+              <p class="section-description--para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                eos voluptatum repudiandae commodi impedit in necessitatibus,
+                sit tempora placeat explicabo assumenda tempore, atque veritatis
+                ea nam cupiditate architecto dolores vero!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="contact">
         <h2>Contact</h2>
         <form action="">
-          <div>
-            <label for="">Email</label>
-            <input type="email" placeholder="john.doe@example.com" />
-          </div>
-          <div>
-            <label for="">Message</label>
-            <textarea type="text" placeholder="Please leave your feedback here!"></textarea>
-          </div>
+          <label for="">Email</label>
+          <input type="email" placeholder="john.doe@example.com" />
+          <label for="">Message</label>
+          <textarea
+            type="text"
+            placeholder="Please leave your feedback here!"
+          ></textarea>
           <button>Submit</button>
         </form>
       </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#courses">Courses</a>
-        </div>
-        <p>Copright Jason Wu</p>
+      <img class="footer-logo" src="./assets/FES.svg" alt="" />
+      <div class="footer-links">
+        <a class="footer-link" href="#about">About</a>
+        <a class="footer-link" href="#discord">Discord</a>
+        <a class="footer-link" href="#contact">Contact</a>
+        <a class="footer-link" href="#courses">Courses</a>
+      </div>
+      <p>Copright Jason Wu</p>
     </footer>
   </body>
 </html>
